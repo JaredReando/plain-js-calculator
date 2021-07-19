@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    color: blue;
+}
+
+#container {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+}
+
+main {
+    margin-top: 20px;
+}
+
+#calculator {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 5px;
+    padding: 5px;
+    border: 1px solid red;
+    height: 400px;
+    width: 250px;
+}
+
+#display {
+    grid-column: 1/5;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 30px;
+    padding: 10px;
+}
+
+#calculator > button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    border: 1px solid black;
+    border-radius: 5px;
+
+}
+
+#calculator >button:hover {
+    background: lightgrey;
+    cursor: pointer;
+}
+
+#calculator >button:active {
+    background: darkgrey;
+    color: white;
+}
+
+#digit-7, #digit-8, #digit-9, #divide {
+    grid-row: 2/2;
+}
+
+#digit-4, #digit-5, #digit-6, #multiply {
+    grid-row: 3/3;
+}
+
+#digit-1, #digit-2, #digit-3, #subtract {
+    grid-row: 4/4;
+}
+
+#digit-0, #result, #decimal, #add, #clear {
+    grid-row: 5/5;
+}
+
+
+#decimal {
+    grid-column: 3/4;
+}
+
+#clear {
+    grid-column: 1/2;
+    background-color: crimson;
+    color: white;
+}
+
+#result {
+    grid-column: 1/5;
+    grid-row: 6/7;
+    background-color: orange;
+    color: white;
+}
+

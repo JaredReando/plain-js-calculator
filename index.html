@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='./styles.css'></style>
+    <title>Document</title>
+    <script src='./calculator.js'></script>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1>This is my test site</h1>
+            <p>This is a simple web page to practice simple Javascript tests using the Jest framework</p>
+        </header>
+        <main>
+            <h2>Subheader One</h2>
+            <p id="main-content">some content goes here</p>
+        </main>
+        <div id="calculator">
+            <h5 id="display">0</h5>
+            <button onclick="displayDigit(1)" id="digit-1">1</button>
+            <button onclick="displayDigit(2)" id="digit-2">2</button>
+            <button onclick="displayDigit(3)" id="digit-3">3</button>
+            <button onclick="displayDigit(4)" id="digit-4">4</button>
+            <button onclick="displayDigit(5)" id="digit-5">5</button>
+            <button onclick="displayDigit(6)" id="digit-6">6</button>
+            <button onclick="displayDigit(7)" id="digit-7">7</button>
+            <button onclick="displayDigit(8)" id="digit-8">8</button>
+            <button onclick="displayDigit(9)" id="digit-9">9</button>
+            <button onclick="displayDigit(0)" id="digit-0">0</button>
+            <button onclick="setOperator('mult')" id="multiply">*</button>
+            <button onclick="setOperator('sub')" id="subtract">-</button>
+            <button onclick="setOperator('div')" id="divide">/</button>
+            <button onclick="setOperator('add')" id="add">+</button>
+            <button onclick="resetCalculator()" id="clear">C</button>
+            <button onclick="insertDecimal()" id="decimal">.</button>
+            <button onclick="displayResult()" id="result">=</button>
+        </div>
+        <script src='./index.js'></script>
+    </div>
+
+</body>
+</html>
